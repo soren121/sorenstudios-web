@@ -1,0 +1,150 @@
+body {
+    color: #fff;
+    background-color: #543C4B;
+}
+
+a, a.title {
+    color: inherit;
+}
+
+.pure-g[class*=pure-u], button, html, input, select, textarea {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pure-g {
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+.pure-g [class*='pure-u'] {
+    letter-spacing: normal;
+}
+
+@media screen and (max-width: 35.5em) {
+    .pure-g[class*=pure-u] {
+        flex-basis: 100%;
+    }
+}
+
+.pure-g, .ribbon > p, h1, h2, header {
+    text-align: center;
+}
+
+h1, h2 {
+    text-shadow: 1px 1px 1px #666;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a.title {
+    margin: .83em 0;
+    display: block;
+    text-decoration: none
+}
+
+a.title:hover {
+    text-decoration: underline
+}
+
+a.title > span:first-child {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+li, span.subtitle {
+    opacity: .95;
+    font-size: .9em;
+}
+
+span.subtitle {
+    font-style: italic;
+    margin-bottom: 15px;
+    display: block;
+    margin-top: -15px;
+}
+
+li {
+    text-align: left;
+    line-height: 1.25em;
+    margin-bottom: 5px;
+    list-style-type: circle;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 3em;
+}
+
+header h3 {
+    margin-top: 5px;
+}
+
+.ribbon {
+    padding: 20px 15px 35px;
+}
+
+.ribbon > .pure-g, .ribbon > p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pure-g p {
+    font-size: .85em;
+    padding: 0 30px;
+    line-height: 140%;
+}
+
+@media screen and (min-width: 35.5em) {
+    .ribbon > .pure-g, .ribbon > p {
+        max-width: 960px;
+        min-width: 320px;
+    }
+}
+
+#contact a {
+    margin-top: 1em;
+}
+
+#contact p {
+    margin-bottom: 2em;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.pure-button .icon {
+    padding-right: 5px;
+}
+
+header > .ribbon {
+    background-color: #E34362;
+    padding-top: 75px;
+}
+
+#projects {
+    background-color: #D5F2E3;
+    color: #333;
+}
+
+#projects h1, #projects h2 {
+    text-shadow: 1px 1px 1px #70A4A7;
+}
+
+#skills {
+    background-color: #4B88A2;
+}
+
+#contact {
+    padding-bottom: 50px;
+}
