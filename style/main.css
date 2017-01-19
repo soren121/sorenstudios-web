@@ -1,14 +1,11 @@
-body {
+html, body {
     color: #fff;
     background-color: #543C4B;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a, a.title {
     color: inherit;
-}
-
-.pure-g [class*='pure-u'], button, html, input, select, textarea {
-    font-family: 'Open Sans', sans-serif;
 }
 
 .pure-g {
