@@ -114,6 +114,11 @@ header h3 {
 
 #contact p {
     margin-bottom: 2em;
+    line-height: 1.75em;
+}
+
+p#buttons {
+    margin-bottom: 3em;
 }
 
 .icon {
@@ -125,6 +130,19 @@ header h3 {
 
 .pure-button .icon {
     padding-right: 5px;
+    vertical-align: -9%;
+}
+
+#gpg-key {
+    font-family: "Liberation Mono", Consolas, Monaco, monospace;
+    font-size: .85em;
+    background: rgba(150, 150, 150, .25);
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    margin: 0 2px;
+    padding: 2px 4px;
+    vertical-align: middle;
+    text-decoration: none;
 }
 
 header > .ribbon {
