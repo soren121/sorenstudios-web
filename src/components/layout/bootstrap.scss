@@ -1,0 +1,12 @@
+@import '_vars';
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    font-family: 'Heebo', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: theme-color('primary');
+}
