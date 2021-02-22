@@ -969,6 +969,11 @@
     ts-node "^9"
     tslib "^2"
 
+"@fontsource/heebo@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/heebo/-/heebo-4.2.1.tgz#790a8c67f09435418763db01d9d5d961f570bf85"
+  integrity sha512-acbf9U24QUO3b1DN1uqncIr/EP1KdV8FGFwLh+2bBIhPm+egFzjVPVohHdfbMQ3NCX2EhYu3rPGbceWjnkbq7w==
+
 "@graphql-tools/batch-execute@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-7.0.0.tgz#e79d11bd5b39f29172f6ec2eafa71103c6a6c85b"
