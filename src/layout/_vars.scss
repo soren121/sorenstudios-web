@@ -1,7 +1,13 @@
-$theme-colors: (
-    "primary": rebeccapurple,
+@import "bootstrap/scss/functions";
+
+$primary: rebeccapurple;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
 );
 
-@import 'bootstrap/scss/functions';
 @import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/maps';
 @import 'bootstrap/scss/mixins';
