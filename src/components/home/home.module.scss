@@ -120,4 +120,8 @@
 
 .project {
     @extend .subsection;
+
+    span + img {
+        margin-left: 5px;
+    }
 }

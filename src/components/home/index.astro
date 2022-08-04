@@ -1,6 +1,7 @@
 ---
 import { Row, Col } from "react-bootstrap";
 import clsx from "clsx";
+import LinkedInIcon from "bootstrap-icons/icons/linkedin.svg";
 import GithubIcon from "bootstrap-icons/icons/github.svg";
 import EnvelopeIcon from "bootstrap-icons/icons/envelope-open-fill.svg";
 
@@ -15,8 +16,13 @@ import styles from "./home.module.scss";
     </h2>
     <ul class={styles.headerSocial}>
         <li>
-            <a href="https://github.com/soren121" target="_blank" rel="noreferrer">
+            <a href="https://www.github.com/soren121" target="_blank" rel="noreferrer">
                 <img src={GithubIcon} class={styles.headerSocialIcon} alt="Github" /><span>@soren121</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/nicholas-narsing" target="_blank" rel="noreferrer">
+                <img src={LinkedInIcon} class={styles.headerSocialIcon} alt="LinkedIn" /><span>nicholas-narsing</span>
             </a>
         </li>
         <li>
@@ -57,7 +63,7 @@ import styles from "./home.module.scss";
             <section class={styles.project}>
                 <h4>
                     <a href="https://github.com/soren121/lightblog" target="_blank" rel="noreferrer">
-                        LightBlog <img src={GithubIcon} alt="Github" />
+                        <span>LightBlog</span><img src={GithubIcon} alt="Github" />
                     </a>
                 </h4>
                 <p class={styles.sectionDesc}>
@@ -69,7 +75,7 @@ import styles from "./home.module.scss";
             <section class={styles.project}>
                 <h4>
                     <a href="https://github.com/soren121/wgamemode" target="_blank" rel="noreferrer">
-                        WGamemode2 <img src={GithubIcon} alt="Github" />
+                        <span>WGamemode2</span><img src={GithubIcon} alt="Github" />
                     </a>
                 </h4>
                 <p class={styles.sectionDesc}>

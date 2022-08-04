@@ -12,6 +12,12 @@ body {
     font-family: 'Heebo', Helvetica, Arial, sans-serif;
 }
 
+@supports (font-variation-settings: normal) {
+    body {
+        font-family: 'HeeboVariable', Helvetica, Arial, sans-serif;
+    }
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 900;
@@ -20,4 +26,8 @@ h1 {
 
 a {
     text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
