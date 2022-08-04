@@ -1,5 +1,4 @@
 ---
-import { Row, Col } from "react-bootstrap";
 import clsx from "clsx";
 import LinkedInIcon from "bootstrap-icons/icons/linkedin.svg";
 import GithubIcon from "bootstrap-icons/icons/github.svg";
@@ -34,165 +33,159 @@ import styles from "./home.module.scss";
     </ul>
 </header>
 
-<main>
-    <Row>
-        <Col md={8}>
-        <section class={styles.introLead}>
-            <p>
-                I have 7+ years of professional experience building scalable 
-                APIs and webapps, using PHP, Node.js, and React, to realize the 
-                potential of the next big idea.
+<main class={styles.main}>
+    <section class={styles.introLead}>
+        <p>
+            I have 7+ years of professional experience building scalable 
+            APIs and webapps, using PHP, Node.js, and React, to realize the 
+            potential of the next big idea.
+        </p>
+        <p>
+            I graduated with a B.Sc. in Computer Science from the 
+            University of Georgia, class of 2018.
+        </p>
+    </section>
+
+    <section class={clsx( styles.section, styles.projectSection )}>
+        <h3>Current and Past Projects</h3>
+
+        <section class={styles.project}>
+            <h4>Yodel</h4>
+            <p class={styles.sectionDesc}>
+                A discontinued third-party Yik Yak app for Windows Phone, 
+                written in JavaScript with WinJS. At its peak, the app had 
+                more than 30,000 users.
             </p>
-            <p>
-                I graduated with a B.Sc. in Computer Science from the 
-                University of Georgia, class of 2018.
+        </section>
+        <section class={styles.project}>
+            <h4>
+                <a href="https://github.com/soren121/lightblog" target="_blank" rel="noreferrer">
+                    <span>LightBlog</span><img src={GithubIcon} alt="Github" />
+                </a>
+            </h4>
+            <p class={styles.sectionDesc}>
+                A lightweight PHP/MySQL blogging platform, intended as an 
+                alternative to WordPress on free or shared hosting.
             </p>
         </section>
-
-        <section class={clsx( styles.section, styles.projectSection )}>
-            <h3>Current and Past Projects</h3>
-
-            <section class={styles.project}>
-                <h4>Yodel</h4>
-                <p class={styles.sectionDesc}>
-                    A discontinued third-party Yik Yak app for Windows Phone, 
-                    written in JavaScript with WinJS. At its peak, the app had 
-                    more than 30,000 users.
-                </p>
-            </section>
-            <section class={styles.project}>
-                <h4>
-                    <a href="https://github.com/soren121/lightblog" target="_blank" rel="noreferrer">
-                        <span>LightBlog</span><img src={GithubIcon} alt="Github" />
-                    </a>
-                </h4>
-                <p class={styles.sectionDesc}>
-                    A lightweight PHP/MySQL blogging platform, intended as an 
-                    alternative to WordPress on free or shared hosting.
-                </p>
-            </section>
-            <section class={styles.project}>
-                <h4>
-                    <a href="https://github.com/soren121/turtleduck" target="_blank" rel="noreferrer">
-                        <span>Turtleduck</span><img src={GithubIcon} alt="Github" />
-                    </a>
-                </h4>
-                <p class={styles.sectionDesc}>
-                    A chat bridge between Minecraft and Telegram that lets
-                    players send messages in-game to offline moderators via
-                    Telegram. Moderators' replies in Telegram are
-                    forwarded back to the in-game chat.
-                </p>
-            </section>
-            <section class={styles.project}>
-                <h4>
-                    <a href="https://github.com/soren121/wgamemode" target="_blank" rel="noreferrer">
-                        <span>WGamemode2</span><img src={GithubIcon} alt="Github" />
-                    </a>
-                </h4>
-                <p class={styles.sectionDesc}>
-                    A plugin for Spigot Minecraft servers that allows server 
-                    operators to define WorldGuard regions with automatic 
-                    gamemode enforcement, such as creative-only zones.
-                </p>
-            </section>
+        <section class={styles.project}>
+            <h4>
+                <a href="https://github.com/soren121/turtleduck" target="_blank" rel="noreferrer">
+                    <span>Turtleduck</span><img src={GithubIcon} alt="Github" />
+                </a>
+            </h4>
+            <p class={styles.sectionDesc}>
+                A chat bridge between Minecraft and Telegram that lets
+                players send messages in-game to offline moderators via
+                Telegram. Moderators' replies in Telegram are
+                forwarded back to the in-game chat.
+            </p>
         </section>
-
-        <section class={clsx( styles.section, styles.experienceSection )}>
-            <h3>Work Experience</h3>
-
-            <section class={styles.experience}>
-                <h4>
-                    Lead Software Engineer at
-                    <span class={styles.experienceCompany}>Wit Labs</span>
-                    <small>(May 2018 - present)</small>
-                </h4>
-                <p class={styles.sectionDesc}>
-                    We make
-                    <a href="https://witcontests.com/" target="_blank" rel="noreferrer">Wit</a>,
-                    a white-labeled platform for fan engagement activations in
-                    sports and entertainment.
-                </p>
-
-                <ul>
-                    <li>
-                        I created, and remain responsible for maintaining, the
-                        entire Wit platform, including the core API, the
-                        consumer-facing webapp, the management console for
-                        brands, and our AWS cloud infrastructure.
-                    </li>
-                    <li>
-                        I developed & published the Wit Video Contests app for
-                        Android on the Google Play Store.
-                    </li>
-                </ul>
-            </section>
-            <section class={styles.experience}>
-                <h4>
-                    Lead Software Engineer at
-                    <span class={styles.experienceCompany}>
-                        Manki Business
-                    </span>
-                    <small>(June 2017 - present)</small>
-                </h4>
-                <p class={styles.sectionDesc}>
-                    Manki Business is a small, versatile consulting firm that 
-                    specializes in web and iOS development.
-                </p>
-
-                <ul>
-                    <li>
-                        I specialize in making efficient web  applications in 
-                        both PHP and Node.js &amp; React to meet our clients'
-                        exacting specifications.
-                    </li>
-                    <li>
-                        I've realized products for clients such as UCSF, 
-                        DonorUP, The Vendry, The Rounds, Bedtime, and Tote, 
-                        among others.
-                    </li>
-                    <li>
-                        For multiple clients, I singularly took over early, 
-                        incomplete development from other vendors and
-                        delivered scalable, production-ready applications.
-                    </li>
-                </ul>
-            </section>
-            <section class={styles.experience}>
-                <h4>
-                    Lead Backend Developer at
-                    <span class={styles.experienceCompany}>Friendsy</span>
-                    <small>(June 2015 - May 2017)</small>
-                </h4>
-                <p class={styles.sectionDesc}>
-                    <a href="https://friendsyapp.com" target="_blank" rel="noreferrer">Friendsy</a>
-                    is a social meetup & dating app exclusively for college
-                    students.
-                </p>
-
-                <ul>
-                    <li>
-                        My responsibilites included developing new API
-                        features for our mobile apps, maintaining &amp; scaling
-                        our infrastructure on AWS, and optimizing legacy code.
-                    </li>
-                    <li>
-                        In two weeks, I overhauled the devops infrastructure 
-                        and optimized core parts of the backend, resulting in a 
-                        500% decrease in app loading times.
-                    </li>
-                    <li>
-                        I developed a number of internal tools to help my 
-                        coworkers and myself manage the Friendsy platform 
-                        easily and more efficiently.
-                    </li>
-                </ul>
-            </section>
+        <section class={styles.project}>
+            <h4>
+                <a href="https://github.com/soren121/wgamemode" target="_blank" rel="noreferrer">
+                    <span>WGamemode2</span><img src={GithubIcon} alt="Github" />
+                </a>
+            </h4>
+            <p class={styles.sectionDesc}>
+                A plugin for Spigot Minecraft servers that allows server 
+                operators to define WorldGuard regions with automatic 
+                gamemode enforcement, such as creative-only zones.
+            </p>
         </section>
-        </Col>
-        <Col md={4}>
-        </Col>
-    </Row>
+    </section>
+
+    <section class={clsx(styles.section, styles.experienceSection)}>
+        <h3>Work Experience</h3>
+
+        <section class={styles.experience}>
+            <h4>
+                Lead Software Engineer at
+                <span class={styles.experienceCompany}>Wit Labs</span>
+                <small>(May 2018 - present)</small>
+            </h4>
+            <p class={styles.sectionDesc}>
+                We make
+                <a href="https://witcontests.com/" target="_blank" rel="noreferrer">Wit</a>,
+                a white-labeled platform for fan engagement activations in
+                sports and entertainment.
+            </p>
+
+            <ul>
+                <li>
+                    I created, and remain responsible for maintaining, the
+                    entire Wit platform, including the core API, the
+                    consumer-facing webapp, the management console for
+                    brands, and our AWS cloud infrastructure.
+                </li>
+                <li>
+                    I developed & published the Wit Video Contests app for
+                    Android on the Google Play Store.
+                </li>
+            </ul>
+        </section>
+        <section class={styles.experience}>
+            <h4>
+                Lead Software Engineer at
+                <span class={styles.experienceCompany}>
+                    Manki Business
+                </span>
+                <small>(June 2017 - present)</small>
+            </h4>
+            <p class={styles.sectionDesc}>
+                Manki Business is a small, versatile consulting firm that 
+                specializes in web and iOS development.
+            </p>
+
+            <ul>
+                <li>
+                    I specialize in making efficient web  applications in 
+                    both PHP and Node.js &amp; React to meet our clients'
+                    exacting specifications.
+                </li>
+                <li>
+                    I've realized products for clients such as UCSF, 
+                    DonorUP, The Vendry, The Rounds, Bedtime, and Tote, 
+                    among others.
+                </li>
+                <li>
+                    For multiple clients, I singularly took over early, 
+                    incomplete development from other vendors and
+                    delivered scalable, production-ready applications.
+                </li>
+            </ul>
+        </section>
+        <section class={styles.experience}>
+            <h4>
+                Lead Backend Developer at
+                <span class={styles.experienceCompany}>Friendsy</span>
+                <small>(June 2015 - May 2017)</small>
+            </h4>
+            <p class={styles.sectionDesc}>
+                <a href="https://friendsyapp.com" target="_blank" rel="noreferrer">Friendsy</a>
+                is a social meetup & dating app exclusively for college
+                students.
+            </p>
+
+            <ul>
+                <li>
+                    My responsibilites included developing new API
+                    features for our mobile apps, maintaining &amp; scaling
+                    our infrastructure on AWS, and optimizing legacy code.
+                </li>
+                <li>
+                    In two weeks, I overhauled the devops infrastructure 
+                    and optimized core parts of the backend, resulting in a 
+                    500% decrease in app loading times.
+                </li>
+                <li>
+                    I developed a number of internal tools to help my 
+                    coworkers and myself manage the Friendsy platform 
+                    easily and more efficiently.
+                </li>
+            </ul>
+        </section>
+    </section>
 </main>
 <footer>
     <p>
