@@ -52,6 +52,7 @@
     background-image: linear-gradient(35deg, #ac81d7, rebeccapurple);
     background-size: 350% 100%;
     animation: gradientSweep 4s ease infinite;
+    will-change: background-position-x, background-position-y;
 
     + h2 {
         margin-top: -10px;
@@ -99,8 +100,13 @@
 
 .subsection {
     border-left: 6px solid rgba(#ac81d7, .5);
+    transition: border-left-color .4s ease-out;
     padding-left: 15px;
     margin-bottom: 20px;
+
+    &:hover {
+        border-left-color: #ac81d7;
+    }
 
     h4 {
         font-weight: 600;
@@ -110,8 +116,6 @@
 }
 
 .experience {
-    @extend .subsection;
-
     .experienceCompany {
         color: #78519f;
     }
@@ -124,8 +128,6 @@
 }
 
 .project {
-    @extend .subsection;
-
     span + img {
         margin-left: 5px;
     }

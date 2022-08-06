@@ -8,12 +8,13 @@
 @import 'bootstrap/scss/containers';
 
 body {
-    font-family: 'Heebo', Helvetica, Arial, sans-serif;
+    font-family: 'Heebo', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-display: swap;
 }
 
 @supports (font-variation-settings: normal) {
     body {
-        font-family: 'HeeboVariable', Helvetica, Arial, sans-serif;
+        font-family: 'HeeboVariable', 'Open Sans', Helvetica, Arial, sans-serif;
     }
 }
 
