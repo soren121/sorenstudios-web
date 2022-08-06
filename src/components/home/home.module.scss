@@ -34,7 +34,7 @@
             display: block;
         }
 
-        .headerSocialIcon {
+        img {
             width: 24px;
             height: 24px;
             margin-right: 5px;
@@ -129,6 +129,10 @@
 
 .project {
     span + img {
+        width: 16px;
+        height: 16px;
         margin-left: 5px;
+        vertical-align: middle;
+        fill: #333;
     }
 }
