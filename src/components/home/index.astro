@@ -1,5 +1,4 @@
 ---
-import clsx from "clsx";
 import LinkedInIcon from "bootstrap-icons/icons/linkedin.svg";
 import GithubIcon from "bootstrap-icons/icons/github.svg";
 import EnvelopeIcon from "bootstrap-icons/icons/envelope-open-fill.svg";
@@ -16,7 +15,7 @@ import styles from "./home.module.scss";
     <ul class={styles.headerSocial}>
         <li>
             <a href="https://www.github.com/soren121" target="_blank" rel="noreferrer">
-                <img src={GithubIcon} class={styles.headerSocialIcon} alt="Github" /><span>@soren121</span>
+                <img src={GithubIcon} class={styles.headerSocialIcon} alt="Github"  /><span>@soren121</span>
             </a>
         </li>
         <li>
@@ -26,8 +25,7 @@ import styles from "./home.module.scss";
         </li>
         <li>
             <a href="mailto:soren121@sorenstudios.com">
-                <img src={EnvelopeIcon} class={styles.headerSocialIcon}
-                    alt="Email" /><span>soren121@sorenstudios.com</span>
+                <img src={EnvelopeIcon} class={styles.headerSocialIcon} alt="Email" /><span>soren121@sorenstudios.com</span>
             </a>
         </li>
     </ul>
@@ -46,10 +44,10 @@ import styles from "./home.module.scss";
         </p>
     </div>
 
-    <section class={clsx( styles.section, styles.projectSection )}>
+    <section class:list={[ styles.section, styles.projectSection ]}>
         <h3>Current and Past Projects</h3>
 
-        <section class={clsx(styles.subsection, styles.project)}>
+        <section class:list={[styles.subsection, styles.project]}>
             <h4>Yodel</h4>
             <p class={styles.sectionDesc}>
                 A discontinued third-party Yik Yak app for Windows Phone, 
@@ -57,7 +55,7 @@ import styles from "./home.module.scss";
                 more than 30,000 users.
             </p>
         </section>
-        <section class={clsx(styles.subsection, styles.project)}>
+        <section class:list={[styles.subsection, styles.project]}>
             <h4>
                 <a href="https://github.com/soren121/lightblog" target="_blank" rel="noreferrer">
                     <span>LightBlog</span><img src={GithubIcon} alt="Github" />
@@ -68,7 +66,7 @@ import styles from "./home.module.scss";
                 alternative to WordPress on free or shared hosting.
             </p>
         </section>
-        <section class={clsx(styles.subsection, styles.project)}>
+        <section class:list={[styles.subsection, styles.project]}>
             <h4>
                 <a href="https://github.com/soren121/turtleduck" target="_blank" rel="noreferrer">
                     <span>Turtleduck</span><img src={GithubIcon} alt="Github" />
@@ -81,7 +79,7 @@ import styles from "./home.module.scss";
                 forwarded back to the in-game chat.
             </p>
         </section>
-        <section class={clsx(styles.subsection, styles.project)}>
+        <section class:list={[styles.subsection, styles.project]}>
             <h4>
                 <a href="https://github.com/soren121/wgamemode" target="_blank" rel="noreferrer">
                     <span>WGamemode2</span><img src={GithubIcon} alt="Github" />
@@ -95,10 +93,10 @@ import styles from "./home.module.scss";
         </section>
     </section>
 
-    <section class={clsx(styles.section, styles.experienceSection)}>
+    <section class:list={[styles.section, styles.experienceSection]}>
         <h3>Work Experience</h3>
 
-        <section class={clsx(styles.subsection, styles.experience)}>
+        <section class:list={[styles.subsection, styles.experience]}>
             <h4>
                 Lead Software Engineer at
                 <span class={styles.experienceCompany}>Wit Labs</span>
@@ -124,7 +122,7 @@ import styles from "./home.module.scss";
                 </li>
             </ul>
         </section>
-        <section class={clsx(styles.subsection, styles.experience)}>
+        <section class:list={[styles.subsection, styles.experience]}>
             <h4>
                 Lead Software Engineer at
                 <span class={styles.experienceCompany}>
@@ -155,7 +153,7 @@ import styles from "./home.module.scss";
                 </li>
             </ul>
         </section>
-        <section class={clsx(styles.subsection, styles.experience)}>
+        <section class:list={[styles.subsection, styles.experience]}>
             <h4>
                 Lead Backend Developer at
                 <span class={styles.experienceCompany}>Friendsy</span>

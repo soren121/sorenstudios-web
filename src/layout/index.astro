@@ -1,5 +1,4 @@
 ---
-import { Container } from 'react-bootstrap';
 import '@fontsource/heebo/400.css';
 import '@fontsource/heebo/600.css';
 import '@fontsource/heebo/900.css';
@@ -20,8 +19,8 @@ const { title } = Astro.props;
 </head>
 <body>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJRZH1SS65"></script>
-    <script is:inline>
+    <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-YJRZH1SS65" />
+    <script type="text/partytown">
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -29,8 +28,8 @@ const { title } = Astro.props;
         gtag('config', 'G-YJRZH1SS65');
     </script>
 
-    <Container className={styles.layoutContainer}>
+    <div class:list={['container', styles.layoutContainer]}>
         <slot />
-    </Container>
+    </div>
 </body>
 </html>
