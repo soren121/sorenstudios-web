@@ -11,15 +11,15 @@
         "preview": "astro preview"
     },
     "devDependencies": {
-        "@astrojs/partytown": "^0.1.9",
-        "@fontsource/heebo": "^4.5.12",
-        "astro": "^1.0.0-rc.7",
+        "@astrojs/partytown": "^1.0.0",
+        "@fontsource/heebo": "^4.5.13",
+        "astro": "^1.0.1",
         "autoprefixer": "^10.4.8",
         "bootstrap": "^5.2.0",
         "bootstrap-icons": "^1.9.1",
         "cssnano": "^5.1.12",
         "postcss": "^8.0.0",
-        "sass": "^1.54.3"
+        "sass": "^1.54.4"
     },
     "browserslist": [
         "defaults",
