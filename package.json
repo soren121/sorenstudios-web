@@ -13,7 +13,7 @@
     "devDependencies": {
         "@astrojs/partytown": "^1.0.0",
         "@fontsource/heebo": "^4.5.13",
-        "astro": "^1.0.1",
+        "astro": "^2.0.4",
         "autoprefixer": "^10.4.8",
         "bootstrap": "^5.2.0",
         "bootstrap-icons": "^1.9.1",
