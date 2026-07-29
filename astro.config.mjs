@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 
 export default defineConfig({
   site: 'https://www.sorenstudios.com',
@@ -7,6 +7,13 @@ export default defineConfig({
   build: {
     inlineStylesheets: 'never'
   },
+  fonts: [{
+    provider:fontProviders.fontsource(),
+    name: 'Heebo',
+    cssVariable: '--font-heebo',
+    weights: ['100 900'],
+    fallbacks: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+  }],
   vite: {
     ssr: {
       noExternal: ['bootstrap', 'bootstrap-icons', '@fontsource/heebo']
